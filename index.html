@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/447d89b03a.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"  />
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+　<title>portfolio</title>
+</head>
+<body>
+
+
+
+  <section class="main">
+    <p>Keitaro Nagashima</p>
+    <h1>Keitan</h1>
+  </section>
+  <section class="about">
+    <h2>About</h2>
+    <img src="img/main_img.jpg" alt="">
+    <h3>けいたん/長島啓太朗</h3>
+    <p>Leaders : Webサービス<br>出身大学 : 東京大学 文科二類<br>サークル : LemonSmash (テニス)<br></p>
+  </section>
+  <section class="photo">
+    <h2>Photo</h2>
+　　<div class="fade">
+      <div>
+        <img src="img/Day2_226.jpg" alt="">
+        <p>初キャン</p>
+　　　　</div>
+      <div>
+        <img src="img/sub_img2.jpg" alt="">
+        <p>チームラボ</p>
+      </div>
+      <div>
+        <img src="img/sub_img3.jpg" alt="">
+        <p>ディズニー</p>
+
+      </div>
+    </div>
+  </section>
+  <section class="favorite">
+    <h2>Favorite</h2>
+    <div class = "favo-contents">
+      <div class="favo-box">
+        <h3>テニス</h3>
+        <img  height="200" src="img/tennisball.png" alt="">
+        <p>中高5年間部活で硬式テニスをやっていました。<br>今もテニスサークルに入って週3回練習しています。サーブが得意です!</p>
+      </div>
+      <div class="favo-box">
+        <h3>日向坂46</h3>
+        <img height="200" src="img/rogo.png" alt="">
+        <p>坂道グループの中でも日向坂が特に好きです。<br>推しは影山優佳さんです。ライブ当たりますように笑</p>
+      </div>
+      <div class="favo-box">
+        <h3>日本百名城</h3>
+        <img height="200" src="img/castle.png" alt="">
+        <p>日本のお城巡りをするのが好きで、日本100名城を周ってます。<br>お気に入りのお城は犬山城です。ぜひいってみて!</p>
+      </div>
+    </div>
+  </section>
+  <section class="work">
+    <h2>Work</h2>
+　　<div class="center">
+      <div>
+        <a href="https://salty-ridge-27900.herokuapp.com/">
+          <img  width="400" src="img/work1.png" alt="">
+        </a>
+          <p>誕生日通知アプリ</p>
+
+      </div>
+      <div>
+        <a href="https://shareboards-0512.herokuapp.com/">
+          <img  width="400" src="img/work2.png" alt="">
+        </a>
+        <p>板書共有アプリ</p>
+      </div>
+      <div>
+        <a href="https://protected-cliffs-20001.herokuapp.com/">
+          <img  width="400" src="img/work3.png" alt="">
+        </a>
+        <p>コーデ生成アプリ</p>
+      </div>
+      <div>
+        <a href="https://seikofesta.netlify.app/">
+          <img  width="400" src="img/work4.png" alt="">
+        </a>
+        <p>文化祭HP</p>
+
+      </div>
+
+  </div>
+  </section>
+  <section class="contact">
+    <h2>Contact</h2>
+    <h3>自分の作品や旅行の思い出とかあげてます。ぜひ！</h3>
+    <a class="facebook" href="https://www.facebook.com/kei.aim/photos">Facebook</a>
+    <a  class="insta" href="https://www.instagram.com/">Instagram</a>
+
+  </section>
+  <footer>
+　　　@Life is Tech ! メンター　けいたん
+  </footer>
+
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.fade').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+    });
+    $('.center').slick({
+          centerMode: true,
+          centerPadding: '60px',
+          slidesToShow: 3,
+          responsive: [
+    　　　{
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+              }
+    　　　　},
+    　　　　{
+              breakpoint: 480,
+              settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '40px',
+                  slidesToShow: 1
+      　　　　　}
+    　　　　　}
+  　　　　　　]
+　　});
+  </script>
+
+</body>
+</html>
